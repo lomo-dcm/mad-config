@@ -24,8 +24,8 @@ spring:
   rabbitmq:
     host: 127.0.0.1
     port: 5672
-    #username: yukong
-    #password: x19961010
+    #username: guest
+    #password: guest
   http:
     multipart:
       max-file-size: 1000MB
@@ -36,7 +36,7 @@ redis:
 ribbon:
   eager-load:
     enabled: true
-    clients: panda-auth,panda-user-service
+    clients: mad-auth,mad-user-service
   Httpclient:
     enabled: true
   OkHttp:
